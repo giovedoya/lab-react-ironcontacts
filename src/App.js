@@ -13,6 +13,8 @@ function App() {
             <th>Picture</th>
             <th>Name</th>
             <th>Popularity</th>
+            <th>wonOscar </th>
+            <th>wonEmmy </th>
           </tr>
         </thead>
         <tbody className="body-card">
@@ -29,6 +31,8 @@ function App() {
               <td className="card-popularity">
                 {contact.popularity.toFixed(2)}
               </td>
+              <td>{contact.wonOscar ? '🏆' : ''}</td>
+              <td>{contact.wonEmmy ? '🏆' : ''}</td>
             </tr>
           ))}
         </tbody>
